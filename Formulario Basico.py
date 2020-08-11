@@ -2,23 +2,26 @@ from tkinter import *
 
 window = Tk()
 
-window.title("Ejemplo Formulario")
+window.title("Welcome to LikeGeeks app")
+
+window.geometry('350x200')
 
 lbl = Label(window, text="Hello")
 
 lbl.grid(column=0, row=0)
 
-window.geometry('350x200')
+##txt = Entry(window,width=10)
+txt = Entry(window,width=10, state='disabled')
+txt.grid(column=1, row=0)
 
 def clicked():
 
-    lbl.configure(text="Button was clicked !!")
+    res = "Welcome to " + txt.get()
+
+    lbl.configure(text= res)
 
 btn = Button(window, text="Click Me", command=clicked)
 
-## Boton con Colores
-## btn = Button(window, text="Click Me", bg="orange", fg="red")
-
-btn.grid(column=1, row=0)
+btn.grid(column=2, row=0)
 
 window.mainloop()
