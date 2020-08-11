@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 
-window.title("Welcome to LikeGeeks app")
+window.title("Welcome")
 
 window.geometry('350x200')
 
