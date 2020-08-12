@@ -17,6 +17,7 @@ chk_state.set(True) #set check state
 chk = Checkbutton(window, text='Choose', var=chk_state)
 chk.grid(column=3, row=0)
 rad1 = Radiobutton(window,text='First', value=1)
+
 rad2 = Radiobutton(window,text='Second', value=2)
 rad3 = Radiobutton(window,text='Third', value=3)
 rad1.grid(column=0, row=4)
